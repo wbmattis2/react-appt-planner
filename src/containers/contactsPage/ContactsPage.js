@@ -41,7 +41,7 @@ export const ContactsPage = ({contacts, handleNewContact}) => {
   else {
     setDuplicate(prev => false);
   }
- });
+ }, [contacts, name]);
 
   return (
     <div>
